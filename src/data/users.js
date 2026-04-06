@@ -1,0 +1,20 @@
+export const users = [
+  { name: "SONIA L LONDOÑO GRAJALES", pin: "SLLG" },
+  { name: "ZORAIDA GARCIA GALEANO", pin: "ZGG" },
+  { name: "CINDY J BARRERA VIECO", pin: "CJBV" },
+  { name: "CRISTINA MARTINEZ MARIN", pin: "CMM" },
+  { name: "ALIX J SEPULVEDA VASQUEZ", pin: "AJSV" },
+  { name: "DEISY T MORA URRIAGA", pin: "DTMU" },
+  { name: "JHOANA M PULGARIN VILLA", pin: "JMPV" },
+  { name: "OSCAR D ARIAS MONSALVE", pin: "ODAM" },
+  { name: "ALEXA M GONZALEZ MEJIA", pin: "AMGM" },
+  { name: "LILIANA L MUÑETON CIFUENTES", pin: "LLMC" },
+  { name: "NATALIA A RESTREPO SIERRA", pin: "NARS" },
+  { name: "YULIET P MORENO CABALLERO", pin: "YPMC" },
+  { name: "LINA M OSPINA HURTADO", pin: "LMOH" },
+  { name: "CLAUDIA Y ALVAREZ ARENAS", pin: "CYAA" },
+  { name: "JOAHAN A SALAZAR", pin: "JAS" },
+  { name: "CLAUDIA P ALVAREZ GONZALEZ", pin: "CPAG" },
+  { name: "Hernán A Tunjuelo Martinez", pin: "HATM" },
+  { name: "Yuli A Gallego Isaza", pin: "YAGI" }
+];
