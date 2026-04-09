@@ -88,15 +88,5 @@ export const questionsGroup3 = [
     ],
     answer: "b"
   },
-  {
-    id: 5,
-    question: "¿Cuál es la ruta para consultar el 'Reporte Solicitudes de Crédito'?",
-    options: [
-      { id: "a", text: "Configuración paramétrico - Solicitudes de crédito – Reportes" },
-      { id: "b", text: "Solicitudes crédito – Reportes – Reporte solicitudes de crédito" },
-      { id: "c", text: "Solicitudes de crédito – Análisis de solicitudes - Reportes" }
-    ],
-    answer: "b"
-  }
 ];
 
