@@ -52,22 +52,51 @@ export const questionsGroup1And2 = [
 export const questionsGroup3 = [
   {
     id: 1,
-    question: "¿Cuál es la ruta para consultar el “Reporte Solicitudes de Crédito”?",
+    question: "¿Cuál es la ruta para la consulta del análisis de las solicitudes de crédito?",
+    options: [
+      { id: "a", text: "Configuración paramétrico - Solicitudes de crédito – Reportes" },
+      { id: "b", text: "Solicitudes crédito – Reportes – Reporte solicitudes de crédito" },
+      { id: "c", text: "Solicitudes de crédito – Análisis de solicitudes - Paramétrico" }
+    ],
+    answer: "c"
+  },
+  {
+    id: 2,
+    question: "Una solicitud de crédito se puede consultar por Número de solicitud de radicación web, identificación o fecha de análisis. ¿Falso o verdadero?",
+    options: [
+      { id: "a", text: "Falso" },
+      { id: "b", text: "Verdadero" }
+    ],
+    answer: "b"
+  },
+  {
+    id: 3,
+    question: "¿Cómo se llama la pestaña para revisar el análisis de la solicitud de crédito?",
+    options: [
+      { id: "a", text: "Solicitud" },
+      { id: "b", text: "Análisis" },
+      { id: "c", text: "Todas las anteriores" }
+    ],
+    answer: "b"
+  },
+  {
+    id: 4,
+    question: "¿Es posible visualizar la trazabilidad de una solicitud de crédito?",
+    options: [
+      { id: "a", text: "Falso" },
+      { id: "b", text: "Verdadero" }
+    ],
+    answer: "b"
+  },
+  {
+    id: 5,
+    question: "¿Cuál es la ruta para consultar el 'Reporte Solicitudes de Crédito'?",
     options: [
       { id: "a", text: "Configuración paramétrico - Solicitudes de crédito – Reportes" },
       { id: "b", text: "Solicitudes crédito – Reportes – Reporte solicitudes de crédito" },
       { id: "c", text: "Solicitudes de crédito – Análisis de solicitudes - Reportes" }
     ],
     answer: "b"
-  },
-  {
-    id: 2,
-    question: "¿Cuál es la ruta para consultar una solicitud de crédito radicada?",
-    options: [
-      { id: "a", text: "Configuración paramétrica – Análisis de solicitudes – Paramétrico" },
-      { id: "b", text: "Reportes – Análisis de solicitudes – Paramétrico" },
-      { id: "c", text: "Solicitudes Créditos – Análisis Solicitudes – Paramétrico" }
-    ],
-    answer: "c"
   }
 ];
+

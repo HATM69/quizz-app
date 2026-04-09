@@ -6,13 +6,13 @@ import './index.css';
 // Tabbed Statistics Component for the Sidebar
 const GlobalStatsSidebar = ({ globalStats, onReset }) => {
   const [activeTab, setActiveTab] = useState('performance'); // performance | activity
+  const [showConfirm, setShowConfirm] = useState(false);
   const total = globalStats.correct + globalStats.incorrect;
   const accuracy = Math.round((globalStats.correct / total) * 100) || 0;
 
-  const handleResetClick = () => {
-    if (window.confirm('¿Estás seguro de que deseas restablecer todas las estadísticas globales? Esta acción no se puede deshacer.')) {
-      onReset();
-    }
+  const handleResetAction = () => {
+    onReset();
+    setShowConfirm(false);
   };
 
   return (
@@ -20,12 +20,20 @@ const GlobalStatsSidebar = ({ globalStats, onReset }) => {
       <div className="sidebar-header">
          <div className="header-flex">
             <span className="live-pill">EN VIVO</span>
-            <button className="btn-reset-mini" onClick={handleResetClick} title="Restablecer Estadísticas">
-              <span className="icon">↺</span>
-            </button>
+            {showConfirm ? (
+              <div className="reset-confirm-box fade-in">
+                <button className="btn-confirm" onClick={handleResetAction}>Si, borrar</button>
+                <button className="btn-cancel" onClick={() => setShowConfirm(false)}>X</button>
+              </div>
+            ) : (
+              <button className="btn-reset-mini" onClick={() => setShowConfirm(true)} title="Restablecer Estadísticas">
+                <span className="icon">↺</span>
+              </button>
+            )}
          </div>
          <h2>Estadísticas</h2>
       </div>
+
 
       <div className="tab-switcher">
         <button 
